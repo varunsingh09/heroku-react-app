@@ -1,5 +1,5 @@
 {
-  "name": "react-app",
+  "name": "heroku-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "0.9.5"
   },
+  "proxy":"https://test-syed-backend-app-acdcb17f7591.herokuapp.com",
+
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",

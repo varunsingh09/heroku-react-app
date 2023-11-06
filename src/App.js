@@ -7,7 +7,8 @@ const App = () => {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    fetchMovies();
+    //fetchMovies();
+    fetchNodeData();
   }, [])
 
   const fetchMovies = async () => {
@@ -18,6 +19,16 @@ const App = () => {
     console.log('response', data)
 
   }
+
+  const fetchNodeData = async () => {
+    const url = "/ServerHealthCheck";
+
+    const response = await fetch(url)
+    const data = await response.json();
+    console.log('ServerHealthCheck', data)
+
+  }
+
   console.log('data', data)
   return (
     <div className="App">
